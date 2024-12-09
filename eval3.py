@@ -11,25 +11,6 @@ def ajouter_peripherique(id, nom, etat, reseau):
         reseau[id] = {"nom": nom, "etat": etat}
         print(f"Élément avec l'id: {id} a été ajouté avec succès")
 
-
-# Programme de test
-ajouter_peripherique(104, "Capteur de luminosité", "actif", reseau)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def supprimer_peripherique(id, reseau):
     if id not in reseau:
         print(f"Le périphérique avec l'id: {id} n'existe pas.")
@@ -59,3 +40,4 @@ ajouter_peripherique(104, "Capteur de luminosité", "actif", reseau)
 # afficher_peripheriques_actifs(reseau)
 # supprimer_peripherique(102, reseau)
 # afficher_peripheriques_actifs(reseau)
+
